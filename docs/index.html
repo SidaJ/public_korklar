@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KorkortQuiz Policies</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7f4;
+        --card: #ffffff;
+        --text: #173126;
+        --muted: #5d7168;
+        --line: #d8e2dc;
+        --accent: #1d7c53;
+        --accent-soft: #e8f5ee;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: linear-gradient(180deg, #edf6f0 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 16px 40px rgba(23, 49, 38, 0.08);
+      }
+      h1, h2 { margin: 0 0 12px; line-height: 1.15; }
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 1.2rem; margin-top: 28px; }
+      p { line-height: 1.7; color: var(--muted); }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+      .card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px;
+      }
+      .card:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+      .eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+      }
+      .label {
+        font-weight: 700;
+        font-size: 1.05rem;
+      }
+      .meta {
+        margin-top: 8px;
+        font-size: 0.95rem;
+      }
+      ul {
+        color: var(--muted);
+        line-height: 1.8;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">KorkortQuiz</div>
+        <h1>Policy Center</h1>
+        <p>
+          This page hosts public policy and compliance documents for KorkortQuiz.
+          More policy pages can be added here later as the app grows.
+        </p>
+
+        <div class="grid">
+          <a class="card" href="./privacy-policy.html">
+            <div class="label">Privacy Policy</div>
+            <div class="meta">How account, quiz progress, and subscription-related data are handled.</div>
+          </a>
+        </div>
+
+        <h2>Planned additions</h2>
+        <ul>
+          <li>Terms of service</li>
+          <li>Account deletion instructions</li>
+          <li>Subscription and refund policy</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+  </html>
